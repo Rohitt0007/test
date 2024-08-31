@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.card{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden;   */
+}
+.imga{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.imga > img{
+    height: 200px;
+    width: 200px;
+     border-radius: 50%; 
+     transition: .25s;
+   
+}
+img:hover {
+    transform: scale(1.2);
+}

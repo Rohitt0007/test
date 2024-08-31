@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    /* height: 400px; */
+    width: 500px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    }
+.mg > img{
+    height: 100%;
+    width: 100%;
+}
+.left{
+    color: white;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#box:hover .left {
+    left: 0;
+}
